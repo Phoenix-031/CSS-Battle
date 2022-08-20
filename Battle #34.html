@@ -1,0 +1,30 @@
+<div></div>
+<style>
+body{
+  background:#007065;
+}
+div{
+  border:solid;
+  width:0;height:0;border-color: transparent transparent #FFEECF transparent;
+  border-width:0 126px 100px 126px;
+  position:absolute;
+  left:74px;top:50px
+}
+div::before{
+  content:'';
+   border:solid;
+  width:0;height:0;border-color: transparent transparent #F5C181 transparent;
+  border-width:0 126px 100px 126px;
+  position:absolute;
+  z-index:-1;left:-126px;top:50px;
+}
+div::after{
+    content:'';
+   border:solid;
+  width:0;height:0;border-color: transparent transparent #00A79D transparent;
+  border-width:0 126px 100px 126px;
+  position:absolute;
+  z-index:-1;left:-126px;top:100px;
+  z-index:-2;
+}
+</style>

@@ -1,0 +1,50 @@
+<div class="a"></div>
+<div class="b"></div>
+<div class="c">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+<style>
+  body{background:#6592CF;}
+  .a{
+    background:#060F55;
+    width:20px;
+    height:80px;
+    transform:translate(-50%);
+    bottom:0;
+    left:50%;
+    position:absolute;
+  }
+  .b{
+    width:140px;
+    height:140px;
+    background:#060F55;
+    border-radius:50%;
+    left:50%;
+    position:absolute;
+    transform:translate(-50%,73%)
+  }
+  
+  .c{
+    width:140px;
+    height:140px;
+    position:absolute;
+    top:50px;
+    left:50%;
+    transform:translate(-50%);
+    display:flex;
+    
+  }
+  span{
+    width:calc(100%/7);
+  }
+  span:nth-child(even){
+    background:#6592CF;
+    width:20px;
+    border-radius:20px;
+    height:110px;
+  }
+  span:nth-child(odd){
+    background:#060F55;
+    border-radius:20px 20px 20px 20px; 
+  }
+</style>

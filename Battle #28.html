@@ -1,0 +1,33 @@
+<p id='a'></p>
+<style>
+  *{margin:0;}
+body{background:#1A4341;}
+#a{
+  position:absolute;
+  transform:translate(140%,180%);
+  border-radius:50%;
+  width:0;
+  border:25px solid #998235;
+  box-shadow:210px 0 0 0 #F3AC3C,70px 70px 0 0 #998235,140px 70px 0 0 #F3AC3C;
+}
+p::before{
+  content:'';
+  position:absolute;
+  width:50px;
+  height:50px;
+  border-radius:50% 50% 0 0;
+  transform:translate(90%,-50%);
+  background:#F3AC3C;
+  box-shadow:70px 0 0 0 #998235;
+}
+p::after{
+  content:'';
+  position:absolute;
+  width:50px;
+  height:50px;
+  border-radius:0 0 50% 50%;
+  transform:translate(-50%,90%);
+  background:#F3AC3C;
+  box-shadow:210px 0 0 0 #998235;
+}
+</style>

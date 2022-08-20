@@ -1,0 +1,39 @@
+<div></div>
+<style>
+  body{
+    background:#09042A;
+  }
+  div{
+    background:#E78481;
+    width:100px;
+    height:50px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
+  div::after{
+    content:'';
+    background:#09042A;
+    width:60px;
+    height:60px;
+    border:10px solid #E78481;
+    border-radius:50%;
+    position:absolute;
+    left:70%;
+    top:-15px;
+    box-shadow:-60px 53px 0 -10px #F5BB9C, -60px 53px 0 0px #09042A;
+  }
+  div::before{
+    content:'';
+    background:#09042A;
+    width:60px;
+    height:60px;
+    border:10px solid #E78481;
+    border-radius:50%;
+    position:absolute;
+    right:70%;
+    top:-15px;
+    box-shadow:60px -53px 0 -10px #F5BB9C, 60px -53px 0 0px #09042A;
+  }
+</style>

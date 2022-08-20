@@ -1,0 +1,65 @@
+<div></div>
+<div></div>
+<div></div>
+<style>
+  body{
+    background:#62306D;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+  }
+  div:nth-child(1){
+    background:#F7EC7D;
+    width:100px;
+    height:200px;
+    position:absolute;
+    bottom:0;
+  }
+  div:nth-child(1)::before{
+    content:'';
+    position:absolute;
+    border-radius:100%;
+    background:#AA445F;
+    top:-25%;
+    width:60px;
+    height:60px;
+    border:20px solid #E38F66;
+  }
+  div:nth-child(2){
+    background:#F7EC7D;
+    width:100px;
+    height:100px;
+    position:absolute;
+    left:12.5%;
+    bottom:0;
+  }
+    div:nth-child(2)::before{
+    content:'';
+    position:absolute;
+    border-radius:100%;
+    background:#E38F66;
+    top:-50%;
+    width:60px;
+    height:60px;
+    border:20px solid #AA445F;
+  }
+  div:nth-child(3){
+    background:#F7EC7D;
+    width:100px;
+    height:100px;
+    position:absolute;
+    right:12.5%;
+    bottom:0;
+  }
+    div:nth-child(3)::before{
+    content:'';
+    position:absolute;
+    border-radius:100%;
+    background:#E38F66;
+    top:-50%;
+    width:60px;
+    height:60px;
+    border:20px solid #AA445F;
+  }
+</style>

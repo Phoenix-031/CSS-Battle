@@ -1,0 +1,52 @@
+<div><span></span><i id='a'></i><i id="b"></i></div>
+<style>
+  body{
+    background:#998235;
+  }
+  div{
+    background:#998235;
+    position:absolute;
+    width:180px;
+    height:180px;
+    border-radius:0 0 50px 50px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
+  span{
+    display:inline-block;
+    background:#1A4341;
+    height:100px;
+    width:80px;
+    border-radius:0 50px;
+  }
+  span::after{
+    content:'';
+    background:#1A4341;
+    height:100px;
+    width:80px;
+    border-radius:50px 0;
+    position:absolute;
+    left:100px;
+    top:80px;
+  }
+ #a{
+    display:inline-block;
+    background:#F3AC3C;
+    height:80px;
+    width:60px;
+    border-radius:0 50px;
+    position:absolute;
+    transform:translate(30px,-10px) rotate(90deg);
+  }
+  #b{
+ display:inline-block;
+    background:#F3AC3C;
+    height:80px;
+    width:60px;
+    border-radius:50px 0;
+    position:absolute;
+    transform:translate(-70px,110px) rotate(90deg);
+  }
+
+</style>

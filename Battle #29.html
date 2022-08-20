@@ -1,0 +1,24 @@
+<div></div>
+<style>
+body{
+  background:#F3AC3C;
+}
+div{
+  background:#1A4341;
+  position:absolute;
+  width:190px;
+  height:190px;
+  left:50%;top:50%;
+  transform:translate(-50%,-50%);
+}
+div::before{
+  content:'';
+  background:#F3AC3C;
+  width:0;
+  position:absolute;
+  border:100px solid #F3AC3C;
+  border-radius:50%;
+  transform:translate(-105px,-105px);
+  box-shadow:200px 0 0 0 #F3AC3C ,0 200px 0 0 #F3AC3C,200px 200px 0 0 #F3AC3C;
+}
+</style>

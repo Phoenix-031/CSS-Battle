@@ -1,0 +1,32 @@
+<div></div>
+<style>
+  body{
+    background:#F3AC3C;
+  }
+  div{
+    width:200px;
+    height:200px;
+    background:#1A4341;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
+  div::before{
+    position:absolute;
+    content:'';
+    background:#998235;
+    width:100px;
+    height:100px;
+    bottom:0;
+  }
+  div::after{
+    content:'';
+    background:#F3AC3C;
+    height:50px;
+    width:50px;
+    position:absolute;
+    bottom:0;
+    right:50%;
+  }
+</style>

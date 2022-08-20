@@ -1,0 +1,36 @@
+<div></div>
+<style>
+  body{
+    background:#62306D;
+  }
+  div{
+    position:absolute;
+    background:#AA445F;
+    height:100px;
+    width:100px;
+    left:50%;
+    top:50%;
+    transform:translate(-120%,-100%);
+    border-radius:50% 50% 0 0 ;
+  }
+  div::before{
+    content:'';
+    background:#F7EC7D;
+    width:100px;
+    height:100px;
+    bottom:-50%;
+    border-radius:50%;
+    position:absolute;
+    box-shadow:140px 0 0 0 #F7EC7D; 
+  }
+  div::after{
+    content:'';
+    position:absolute;
+    background:#E38F66;
+    height:100px;
+    width:100px;
+    transform:translate(140%,100%);
+    border-radius: 0 0 50% 50%;
+    z-index:-1;
+  }
+</style>

@@ -1,0 +1,36 @@
+<div></div>
+<style>
+  body{
+    background:#222;
+  }
+  div{
+    position:absolute;
+    width:30px;
+    height:80px;
+    background:#F2994A;
+    left:50%;
+    top:50%;
+    transform:rotate(45deg) translate(-300%,-45.5%) ;
+    box-shadow:100px 38px 0 0 #2D9CDB;
+  }
+  div:before{
+    content:'';
+    background:#F2994A;
+    width:30px;
+    height:80px;
+    position:absolute;
+    transform:rotate(-90deg) translate(-45px,25px);
+    border-top-left-radius:10px;
+    border-bottom-right-radius:5px;
+  }
+  div::after{
+    content:'';
+    background:#2D9CDB;
+    width:30px;
+    height:80px;
+    position:absolute;
+    transform:rotate(-90deg) translate(7px,75px);
+        border-top-left-radius:5px;
+    border-bottom-right-radius:10px;
+  }
+</style>

@@ -1,0 +1,16 @@
+<div><span></span><span></span><span></span></div>
+<style>
+body{background:#1A4341;display:flex;justify-content:center;align-items:center;}
+div{width:250px;height:250px;display:flex;flex-direction:column;justify-content:center;border-radius:50%;overflow:hidden;}
+div::before{
+  content:'';position:absolute;background:#998235;
+  border-radius:50%;height:200px;width:200px;left:100px;top:50px;}div::after{
+    width:200px;height:140px;background:#1A4341;content:'';position:absolute;top:80px;left:100px;
+  }
+  span{
+    background:#F3AC3C;
+    display:block;
+    width:250px;
+    height:20px;z-index:1;margin:10px 0 10 0;
+  }
+</style>
